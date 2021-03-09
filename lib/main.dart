@@ -54,18 +54,18 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final List<Transaction> _userTransactions = [
-    Transaction(
-      id: 't1',
-      title: 'New Shoe',
-      amount: 69.99,
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: 't2',
-      title: 'Weekly Groceries',
-      amount: 16.53,
-      date: DateTime.now(),
-    ),
+    // Transaction(
+    //   id: 't1',
+    //   title: 'New Shoe',
+    //   amount: 69.99,
+    //   date: DateTime.now(),
+    // ),
+    // Transaction(
+    //   id: 't2',
+    //   title: 'Weekly Groceries',
+    //   amount: 16.53,
+    //   date: DateTime.now(),
+    // ),
   ];
 
   bool _showChart = false;
@@ -147,7 +147,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: (MediaQuery.of(context).size.height -
                             appBar.preferredSize.height -
                             MediaQuery.of(context).padding.top) *
-                        0.3,
+                        0.7,
                     child: Chart(_recentTransactions),
                   )
                 : Container(
